@@ -6,7 +6,8 @@ describe("Test the root path", () => {
     const response = await request(app)
       .get("/")
       expect(response.statusCode).toBe(202);
-      done()
-
+      afterAll((done) => {
+        done();
   });
 });
+})
