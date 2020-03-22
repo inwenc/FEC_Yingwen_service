@@ -17,9 +17,15 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-react', '@babel/preset-env']
+            // plugins: [
+            //   ["transform-es2015-modules-commonjs", {
+            //     "allowTopLevelThis": true
+            //   }]
+            // ]
           }
         }
       }
     ]
   }
+
 };

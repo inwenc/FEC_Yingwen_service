@@ -65,8 +65,7 @@ export var getMonthDays = (month, year) => {
 
 
 export const getMonthFirstDay = (month, currentYear) => {
-  var value;
-  value = Math.abs(new Date(`${currentYear}-${zeroPad(month, 2)}`).getDay() + 1);
+  var value = Math.abs(new Date(`${currentYear}-${zeroPad(month, 2)}`).getDay() + 1);
   if (value === 7) {
     return 0;
   } else {
