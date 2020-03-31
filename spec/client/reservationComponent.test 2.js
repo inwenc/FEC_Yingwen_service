@@ -4,9 +4,9 @@ import Enzyme from 'enzyme';
 import { shallow, mount, render } from 'enzyme';
 // const Adapter = require('enzyme-adapter-react-16');
 // const App = require('../../client/src/index');
-import { App } from '../../client/src/index';
+import App from '../../client/src/index';
 
-Enzyme.configure({ adapter: new Adapter() });
+//Enzyme.configure({ adapter: new Adapter() });
 
 // const { shallow, mount, render } = require('enzyme');
 // describe('<MyComponent />', () => {
@@ -15,23 +15,9 @@ Enzyme.configure({ adapter: new Adapter() });
 //      expect(wrapper.find(App)).to.have.lengthOf(1);
 //    })
 // });
-// describe('<MyComponent />', () => {
-//   const setup = () => { 
-//     return shallow(<App />) 
-//   }
-//   it('renders three <App /> components', () => {
-//     // const component = shallow(<App />);
-//     const wrapper = setup()
-//     expect(wrapper.find('.MainFrame').toExist())
-//   })})
-
-
 describe('<MyComponent />', () => {
-  const setup = () => {
-    return shallow(<App />)
-  }
   it('renders three <App /> components', () => {
-    const wrapper = setup()
-    expect(wrapper.find('.MainFrame')).toExist()
+    const component = shallow(<App />);
+    const wrapper = component.find('.mainFrame')
+    expect(wrapper.length.toBe(1)
   });
-})
