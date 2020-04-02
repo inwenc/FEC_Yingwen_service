@@ -10,7 +10,8 @@ env: {
     plugins: ["transform-export-extensions", "@babel/plugin-transform-modules-commonjs"],
     only: [
       "./**/*.js",
-      "node_modules/jest-runtime"
+      "node_modules/jest-runtime",
+      "../src"
     ]
   }
 }

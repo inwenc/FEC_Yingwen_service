@@ -1,5 +1,6 @@
 import React from 'react';
 import Enzyme from 'enzyme';
+import 'babel-polyfill';
 //import Adapter from 'enzyme-adapter-react-16';
 import { shallow, mount, render } from 'enzyme';
 // const Adapter = require('enzyme-adapter-react-16');

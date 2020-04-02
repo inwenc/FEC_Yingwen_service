@@ -1,5 +1,6 @@
 const request = require('supertest')
 const app = require('../../server/index.js');
+import 'babel-polyfill';
 
 describe("Test the root path", () => {
   test("It should response the GET method", async () => {
