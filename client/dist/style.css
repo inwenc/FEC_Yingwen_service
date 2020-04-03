@@ -119,12 +119,12 @@ float: right;
 
   .checkInButton:focus {
     background: rgb(61, 176, 180);
-    color: rgb(250, 245, 245);
+    color:rgb(23, 73, 75);
   }
 
   .checkOutButton:focus {
     background: rgb(61, 176, 180);
-    color: rgb(241, 241, 247);
+    color: rgb(23, 73, 75);
   }
 
 
