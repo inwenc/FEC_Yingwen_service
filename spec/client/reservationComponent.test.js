@@ -26,9 +26,10 @@ Enzyme.configure({ adapter: new Adapter() });
 //     const wrapper = setup()
 //     expect(wrapper.find('.MainFrame').toExist())
 //   })})
+const wrapper = shallow(<App />
+  );
 
-
-describe('<MyComponent />', () => {
+describe('<App />', () => {
   // const setup = () => {
   //   return shallow(<App />)
   // }
@@ -37,8 +38,12 @@ describe('<MyComponent />', () => {
   //   expect(wrapper.find('.MainFrame')).toExist()
   // });
 
-   it ('renders three components', ()=> {
-    const wrapper = shallow(<App />);
-     expect(wrapper.find(App)).to.have.lengthOf(1);
+
+
+    it('should contain a CalendarBoard component', () => {
+      expect(wrapper.find(App)).toHaveLength(1);
+    });
+
 })
-})
+
+  //  expect(wrapper.find(App)).to.have.lengthOf(1);
