@@ -8,7 +8,8 @@ module.exports = {
  testEnvironment: 'node',
  coveragePathIgnorePatterns: [
   "/node_modules/"],
-moduleFileExtensions: ["js", "json", "jsx", 'ts', 'tsx']
+moduleFileExtensions: ["js", "json", "jsx", 'ts', 'tsx'],
+transformIgnorePatterns:["/Users/yingwenchen/Desktop/HR project/HR_RPT/FEC/FEC_Yingwen_service/client/src/index.jsx"]
 
 
 }
